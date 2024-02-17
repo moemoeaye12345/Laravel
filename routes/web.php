@@ -29,3 +29,6 @@ Route::get('/create',[CategoryController::class, 'create'])->name('create');
 Route::get('/show',[CategoryController::class, 'show'])->name('show');
 
 Route::get('/edit',[CategoryController::class, 'edit'])->name('edit');
+Route::get('/home',function(){
+    return view('welcome');
+});
